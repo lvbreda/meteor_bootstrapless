@@ -15,11 +15,11 @@ Package.on_use(function (api) {
 var less = require('less');
 var fs = require('fs');
 var path = require('path');
-var bootstrap = "";
+var bootstrap = ""; 
 Package.register_extension(
   "less", function (bundle, source_path, serve_path, where) {
     serve_path = serve_path + '.css';
-    console.log(source_path);
+
     if(source_path.indexOf("bootstrap.less")>-1){
       bootstrap = String(fs.readFileSync(source_path));
       return;
@@ -40,7 +40,7 @@ Package.register_extension(
         }
         contents = contents.replace(/@amport/g,'@import');
       less.render(contents.toString('utf8'), function (err, css) {
-         console.log(css);
+ 
         // XXX why is this a callback? it's not async.
         if (err) {
           bundle.error(source_path + ": Less compiler error: " + err.message);
