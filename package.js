@@ -3,12 +3,11 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-  api.add_files('less/bootstrap.less', 'server');
-  api.add_files('js/bootstrap.js', 'client');
-  api.add_files('img/glyphicons-halflings.png', 'client');
-  api.add_files('img/glyphicons-halflings-white.png', 'client');
 
-
+  api.add_files('build/less/bootstrap.less', 'server');
+  api.add_files('build/js/bootstrap.js', 'client');
+  api.add_files('build/img/glyphicons-halflings.png', 'client');
+  api.add_files('build/img/glyphicons-halflings-white.png', 'client');
 
 });
 
