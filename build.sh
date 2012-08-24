@@ -7,7 +7,7 @@ mkdir -p build/less
 mkdir -p build/js
 
 cd lib/bootstrap
-git checkout v2.0.4
+git checkout v2.1.0
 make bootstrap
 cd ../..
 
