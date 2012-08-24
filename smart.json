@@ -3,6 +3,6 @@
   "description": "Use bootstrap the less edition with meteor. Remember to add @import \"bootstrap.less\"; to your .less file",
   "homepage": "https://github.com/lvbreda/meteor_bootstrapless",
   "author": "Lander Van Breda",
-  "version": "0.1.0",
+  "version": "2.0.4",
   "git": "https://github.com/lvbreda/meteor_bootstrapless"
 }
